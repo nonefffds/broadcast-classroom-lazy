@@ -5,34 +5,32 @@
 tell application "WeChat" to activate
 tell application "System Events"
 	tell process "Wechat"
-		keystroke "xxxdao" #AppleScript²»Ö§³ÖÖĞÎÄkeystroke£¬ĞèÒªÇĞ»»µ½ÖĞÎÄÊäÈë·¨£¬xxx¸ÄÎª×Ô¼ºÃû×ÖÈ«Æ´
-		keystroke "1" #Ñ¡ÔñÊäÈë·¨ºòÑ¡µÚÒ»Ïî
+		keystroke "xxxdao" #AppleScriptä¸æ”¯æŒä¸­æ–‡keystrokeï¼Œéœ€è¦åˆ‡æ¢åˆ°ä¸­æ–‡è¾“å…¥æ³•ï¼Œxxxæ”¹ä¸ºè‡ªå·±åå­—å…¨æ‹¼
+		keystroke "1" #é€‰æ‹©è¾“å…¥æ³•å€™é€‰ç¬¬ä¸€é¡¹
 		key code 36 #return
 	end tell
 	delay 6
 end tell
 
-tell application "Safari" to activate #Safari¶ÔAppleScriptÖ§³Ö¿ÉÄÜÉÔºÃ
+tell application "Safari" to activate #Safariå¯¹AppleScriptæ”¯æŒå¯èƒ½ç¨å¥½
 tell application "Safari"
 	make new document
 	activate
 	tell window 1
 		
-		set current tab to (make new tab with properties {URL:"https://xue.17xueba.com/views/w/study_center/schedule.vpage"}) #ÎÒÃÇÑ§Ğ£Ê¹ÓÃµÄÊÇÒ»ÆğÑ§ÍøĞ£µÄÆ½Ì¨£¬ÈçÓĞĞèÒªÇë¸ÄÎªÆäËûÆ½Ì¨£¨ÆäËûÄÚÈİÒ²ĞèÒª½øĞĞĞŞ¸Ä£©
-		delay 5 #±ÜÃâÃ»¼ÓÔØ³öÀ´¾ÍÖ´ĞĞÇå³ı±êÇ©Ò³
+		set current tab to (make new tab with properties {URL:"https://xue.17xueba.com/views/w/study_center/schedule.vpage"}) #æˆ‘ä»¬å­¦æ ¡ä½¿ç”¨çš„æ˜¯ä¸€èµ·å­¦ç½‘æ ¡çš„å¹³å°ï¼Œå¦‚æœ‰éœ€è¦è¯·æ”¹ä¸ºå…¶ä»–å¹³å°ï¼ˆå…¶ä»–å†…å®¹ä¹Ÿéœ€è¦è¿›è¡Œä¿®æ”¹ï¼‰
+		delay 5 #é¿å…æ²¡åŠ è½½å‡ºæ¥å°±æ‰§è¡Œæ¸…é™¤æ ‡ç­¾é¡µ
 		
-		set closeTab to "Ò»ÆğÑ§ÍøĞ££¨Í¬°àÍ¬Ñ§¶¼ÔÚÑ§£©" as string
+		set closeTab to "ä¸€èµ·å­¦ç½‘æ ¡ï¼ˆåŒç­åŒå­¦éƒ½åœ¨å­¦ï¼‰" as string
 		tell application "Safari"
-			close (every tab of window 1 whose name is not equal to closeTab) #Çå³ı³ıÑ§Ï°ÖĞĞÄÒÔÍâµÄ±êÇ©Ò³
+			close (every tab of window 1 whose name is not equal to closeTab) #æ¸…é™¤é™¤å­¦ä¹ ä¸­å¿ƒä»¥å¤–çš„æ ‡ç­¾é¡µ
 		end tell
 		delay 30
 		
-		tell application "System Events" #Safari´°¿Ú´óĞ¡1461x1058ÇÒ·ÅÔÚ×îÓÒ£¬ÆÁÄ»·Ö±æÂÊ1920x1080
-			click at {1587, 507} #µã»÷¹Û¿´Ö±²¥£¬Ä¬ÈÏµã»÷»áÌø×ªµ½ĞÂ±êÇ©Ò³
+		tell application "System Events" #Safariçª—å£å¤§å°1461x1058ä¸”æ”¾åœ¨æœ€å³ï¼Œå±å¹•åˆ†è¾¨ç‡1920x1080
+			click at {1587, 507} #ç‚¹å‡»è§‚çœ‹ç›´æ’­ï¼Œé»˜è®¤ç‚¹å‡»ä¼šè·³è½¬åˆ°æ–°æ ‡ç­¾é¡µ
 			delay 10
-			click at {1587, 507} #±ÜÃâÃ»µãÉÏÖØĞÂµãÒ»ÏÂ
-			delay 15
-			click at {1187, 742} #µã»÷ÊÕÈ¡º£ĞÇ
+			click at {1587, 507} #é¿å…æ²¡ç‚¹ä¸Šé‡æ–°ç‚¹ä¸€ä¸‹
 		end tell
 		
 	end tell

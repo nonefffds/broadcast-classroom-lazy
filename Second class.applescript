@@ -6,15 +6,13 @@ tell application "Safari"
 	tell front window
 		set current tab to tab 1
 		delay 2
-		tell application "System Events" #Safari´°¿Ú´óĞ¡1461x1058ÇÒ·ÅÔÚ×îÓÒ£¬ÆÁÄ»·Ö±æÂÊ1920x1080
-			click at {1592, 766} #µã»÷µÚÈı¿Æ£¬ÒÔÃâÓĞ¿ÆÄ¿ÖØ¸´Ïî
+		tell application "System Events" #Safariçª—å£å¤§å°1461x1058ä¸”æ”¾åœ¨æœ€å³ï¼Œå±å¹•åˆ†è¾¨ç‡1920x1080
+			click at {1592, 766} #ç‚¹å‡»ç¬¬ä¸‰ç§‘ï¼Œä»¥å…æœ‰ç§‘ç›®é‡å¤é¡¹
 			delay 10
-			click at {1592, 766} #±ÜÃâÃ»µãÉÏÖØĞÂµãÒ»ÏÂ
-			click at {1589, 637} #µã»÷ÏÂÒ»¿Æ
+			click at {1592, 766} #é¿å…æ²¡ç‚¹ä¸Šé‡æ–°ç‚¹ä¸€ä¸‹
+			click at {1589, 637} #ç‚¹å‡»ä¸‹ä¸€ç§‘
 			delay 10
-			click at {1589, 637} #±ÜÃâÃ»µãÉÏÖØĞÂµãÒ»ÏÂ
-			delay 15
-			click at {1187, 742} #µã»÷ÊÕÈ¡º£ĞÇ
+			click at {1589, 637} #é¿å…æ²¡ç‚¹ä¸Šé‡æ–°ç‚¹ä¸€ä¸‹
 		end tell
 	end tell
 end tell

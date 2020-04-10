@@ -6,7 +6,7 @@
 
 本脚本使用了较多的模拟鼠标点击功能，因此在大多数情况下本脚本可能并不适合使用。（微信给的API太少了，而 Safari 选择页面上的内容我也不太会用...）
 
-博文写完了： [https://nonefffds.github.io/2020/04/10/潦草学习%20AppleScript：AppleScript%20初上手/]()
+博文写完了： [https://nonefffds.github.io/]()
 
 
 
